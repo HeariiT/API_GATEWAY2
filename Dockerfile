@@ -1,10 +1,10 @@
 FROM ruby:2.3
 
-RUN mkdir /api_gateway
-WORKDIR /api_gateway
+RUN mkdir /api_gatewayc
+WORKDIR /api_gatewayc
 
-ADD Gemfile /api_gateway/Gemfile
-ADD Gemfile.lock /api_gateway/Gemfile.lock
+ADD Gemfile /api_gatewayc/Gemfile
+ADD Gemfile.lock /api_gatewayc/Gemfile.lock
 
 RUN bundle install
-ADD . /api_gateway
+ADD . /api_gatewayc
